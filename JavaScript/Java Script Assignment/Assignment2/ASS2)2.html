@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    //Named Function//
+        function fibonocci(num)
+        {
+        var f1=0,f2=1;
+    while(num>0)
+{
+console.log(f1+" ");
+var f3=f1+f2;
+f1=f2;
+f2=f3;
+num--;
+}
+}
+fibonocci(7);
+//Anonymous Function//
+var Fibonocci= function(num){
+    var f1=0;
+    var f2=0;
+while(num>0)
+{
+console.log(f1+" ");
+var f3=f1+f2;
+f1=f2;
+f2=f3;
+num--;
+}
+fibonocci(7);
+
+}
+//Self Invoked Function//
+console.log('Hello');
+(function(num){
+    var f1=0,f2=1;
+while(num>0)
+{
+console.log(f1+" ");
+var f3=f1+f2;
+f1=f2;
+f2=f3;
+num--;
+}
+})(7);
+//Fat Arrow F unction//
+var Fibonocci=(num)=>{
+    var f1=0,f2=1;
+while(num>0)
+{
+console.log(f1+" ");
+}
+var f3=f1+f2;
+f1=f2;
+f2=f3;
+num--;
+}
+        
+fibonocci(7);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

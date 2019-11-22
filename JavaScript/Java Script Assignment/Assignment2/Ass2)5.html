@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prime or Not</title>
+    <script>
+        function prime(num){
+            var count=0;
+        for(var i=1;i<=num;i++){
+            if(num%i==0){
+             count++;
+            }
+            if(count>2){
+            break;
+
+            }
+        }
+            if(count==2)
+        {
+            console.log(num,'is a prime number');
+        }
+        else{
+            console.log(num,'is not a prime number');
+            }
+        
+        }
+    prime(4);
+    //Anonymous Function//
+    var prime = function(num){
+        var count=0;
+        for(var i=1;i<=num;i++){
+        if(num%i==0){
+            count++;
+        }
+            if(count>2){
+            break;
+
+            }
+        }
+            if(count==2)
+        {
+            console.log(num,'is a prime number');
+        }
+        else{
+            console.log(num,'is not a prime number');
+            }}
+         prime(4);
+         
+    //Self Invoked Function//
+    console.log('Hello');
+    (function(num){
+        var count=0;
+        for(var i=1;i<=num;i++){
+        if(num%i==0){
+            count++;
+        }
+            if(count>2){
+            break;
+
+            }
+        }
+            if(count==2)
+        {
+            console.log(num,'is a prime number');
+        }
+        else{
+            console.log(num,'is not a prime number');
+            }
+        
+    })(4);
+    //Fat Arrow Fumction//
+    var prime=(num)=>{
+        var count=0;
+        for(var i=1;i<=num;i++){
+        if(num%i==0){
+            count++;
+        }
+            if(count>2){
+            break;
+
+            }
+        }
+            if(count==2)
+        {
+            console.log(num,'is a prime number');
+        }
+        else{
+            console.log(num,'is not a prime number');
+            }
+        
+        }
+    prime(4);
+
+
+
+
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

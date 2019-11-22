@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>add number in Array</title>
+    <script>
+        function add(a){
+            var sum=0;
+            for(var i=0;i<a.length;i++){
+                sum=a[i]+sum;
+            }
+            console.log('the sum of elements in Array is:',sum);
+        }
+        var a=[10,20,30];
+        add(a);
+        //Anonymous Function//
+         var add=function(num){
+             var sum=0;
+             for(var i=0;i<a.length;i++)
+             sum=a[i]+sum;
+         
+         console.log('the sum of elements in Array is:',sum);
+
+        }
+        var a=[10,20,30];
+        add(a);
+
+
+         //Self Invoked Function//
+         console.log('Hello');
+         (function(num){
+             var sum=0;
+             for(var i=0;i<a.length;i++)
+                 sum=a[i]+sum;
+             
+            console.log('the sum of elements in Array is:',sum);
+        
+          }) [10,20,30]
+         
+        
+
+         //Fat Arrow Function//
+         var add=(num)=>{
+             var sum=0;
+             for(var i=0;i<a.length;i++){
+             sum=a[i]+sum;
+         
+         console.log('the sum of elements in Array is:',sum);
+             }
+         }
+        var a=[10,20,30];
+        add(a);
+         
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

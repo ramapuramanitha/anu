@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    //Named Function//
+
+     function circum(num){
+         var r;
+         var circum=2*Math.PI*num;
+         console.log('circumference',circum);
+    }
+    circum(2); 
+    //Anonymous Function//
+    var circum = function (num){
+        var r;
+        var circum=2*Math.PI*num;
+        console.log('circumference',circum);
+
+    }
+    //Self Invoked Function//
+    console.log('Hello');
+    (function(num){
+        var r;
+        var circum=2*Math.PI*num;
+        console.log('circumference',circum);
+
+
+        })
+        //Fat Arrow Function//
+    var circum =(num)=>{
+         var r;
+         var circum=2*Math.PI*num;
+         console.log('circumference',circum);
+          }
+    circum(2);
+</script>
+</head>
+<body>
+    
+</body>
+</html>
