@@ -1,0 +1,4 @@
+10,Anitha,100000,F
+11,Yashodha,50000,F
+12,Naveen,200000,M
+13,Siddu,40000,M
