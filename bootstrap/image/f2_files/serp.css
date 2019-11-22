@@ -1,0 +1,737 @@
+/*-------------------------------------*\
+    COLORS
+\*-------------------------------------*/
+/**
+ * Colors
+ *
+ * All the global colors used throughout
+ *
+ **
+ * Base
+ *
+ *
+
+    [lightest]  [brightest]
+    [lighter]   [brighter]
+    [light]     [bright]
+        --- base ---
+    [dark]      [dull]
+    [darker]    [duller]
+    [darkest]   [dullest]
+ *
+ * Name Pattern:
+ *  c-[name]--[modifier]
+ *
+ */
+/*-------------------------------------*\
+    Base Colors
+\*-------------------------------------*/
+/** don't use */
+/*-------------------------------------*\
+    Site Colors
+\*-------------------------------------*/
+/***
+    Cards
+ ***/
+/**
+ * Cards
+ *
+ * Styline to give an element a self-contained, card-like look
+ *
+
+ */
+/***
+    Slabs
+ ***/
+/**
+ * Slabs
+ *
+ * Styling for creating a colored area, with proper text color and contrast
+ * adjustments
+ *
+
+ */
+.slab--dark {
+  color: #fff;
+  background-color: #212121;
+  text-shadow: 1px 1px 0 #000;
+  /*
+    // .search-result-container {
+    //     a.result-link,
+    //     a.result-link:hover,
+    //     a.result-link:active,
+    //     a.result-link:focus,
+    //     .sitelinks ul li a,
+    //     .sitelinks ul li a:hover,
+    //     .sitelinks ul li a:active,
+    //     .sitelinks ul li a:focus,
+    //     {
+    //         color: $c-link-lighter !important;
+    //     }
+
+    //     .result-desc a,
+    //     .result-desc a:hover,
+    //     .result-desc a:active,
+    //     .result-desc a:focus {
+    //         color: $c-gray-dark !important;
+    //     }
+
+    //     cite a,
+    //     cite a:hover,
+    //     cite a:active,
+    //     cite a:focus {
+    //         color: $c-green-light !important;
+    //     }
+    // }
+    */ }
+  .slab--dark a {
+    color: #5a75a9; }
+
+.serp-search-box {
+  padding-right: 0;
+  border-collapse: separate;
+  justify-content: space-between; }
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap; }
+
+.serpSearchForm {
+  width: 600px;
+  display: flex;
+  padding-right: 60px; }
+
+.serp-search-box__input {
+  position: relative;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  margin-bottom: 0;
+  padding-top: 6px;
+  display: flex;
+  padding-bottom: 6px; }
+
+.tagline {
+  line-height: 52px;
+  font-size: 13px;
+  padding-right: 16px;
+  text-decoration: underline; }
+
+.tagline__link {
+  color: black;
+  padding-right: 45px; }
+
+.serp-search-box__search-bar {
+  width: 80%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  height: 38px;
+  padding: 9px 14px;
+  font-size: 14px;
+  line-height: 1.3;
+  border-radius: 1px;
+  position: relative;
+  z-index: 2;
+  background-image: none;
+  border: 1px solid #d9d9d9;
+  border-top-color: silver;
+  box-shadow: none;
+  transition: none;
+  color: #555;
+  margin-right: -3px;
+  flex-grow: 1; }
+
+.serp-search-box__search-bar:hover {
+  border: 1px solid #b9b9b9;
+  border-top-color: #a0a0a0;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); }
+
+.serp-search-box__search-bar:focus {
+  border-color: #4d90fe;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(77, 144, 254, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(77, 144, 254, 0.6);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3); }
+
+.serp-search-box__input-container {
+  border-radius: 0;
+  position: relative;
+  font-size: 0;
+  white-space: nowrap;
+  vertical-align: middle; }
+
+.button {
+  padding: 5px 15px 5px 15px;
+  margin: 0;
+  height: 38px;
+  font-size: 14px;
+  line-height: 1.3;
+  border-radius: 1px;
+  z-index: 2;
+  position: relative;
+  cursor: default;
+  background-clip: border-box;
+  box-shadow: none;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  user-select: none; }
+
+.button--search {
+  color: #fff;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+  background-image: -webkit-linear-gradient(top, #4d90fe 0, #4787ed 100%);
+  background-image: -o-linear-gradient(top, #4d90fe 0, #4787ed 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#4d90fe), to(#4787ed));
+  background-image: linear-gradient(to bottom, #4d90fe 0, #4787ed 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff4d90fe',endColorstr='#ff4787ed',GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  background-repeat: repeat-x;
+  border: 1px solid #3079ed;
+  background-color: #337ab7;
+  vertical-align: top; }
+
+.button--search:focus {
+  border: 1px solid #3079ed;
+  -webkit-box-shadow: inset 0 0 0 1px #fff;
+  box-shadow: inset 0 0 0 1px #fff; }
+
+.cf,
+.clearfix,
+.clear-fix {
+  /**
+     * For IE 6/7 only
+     * Include this rule to trigger hasLayout and contain floats.
+     */
+  /**
+     * For modern browsers
+     * 1. The space content is one way to avoid an Opera bug when the
+     *    contenteditable attribute is included anywhere else in the document.
+     *    Otherwise it causes space to appear at the top and bottom of elements
+     *    that are clearfixed.
+     * 2. The use of `table` rather than `block` is only necessary if using
+     *    `:before` to contain the top-margins of child elements.
+     */ }
+  .cf,
+  .clearfix,
+  .clear-fix {
+    *zoom: 1; }
+  .cf:before, .cf:after,
+  .clearfix:before,
+  .clearfix:after,
+  .clear-fix:before,
+  .clear-fix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */ }
+  .cf:after,
+  .clearfix:after,
+  .clear-fix:after {
+    clear: both; }
+
+/**
+ * Use on the containing text element, to create a single line
+ * text-overflowing ellipsis
+ */
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+/*-------------------------------------*\
+    ASPECT-RATIO
+\*-------------------------------------*/
+/***
+    RESULTS LIST
+ ***/
+/**
+ * Results list
+ *
+ * Stylinhgs for list of search results, in a generic fashion, can be used to
+ * compose different types of more specific results, a.k.a. test results, video'
+ * results, shopping, etc.
+ *
+
+  <.results-list__container  .--horizontal/vertical/grid/list>
+    <a  .results-list__shifter  .--previous>
+    <list  .results-list>
+      <li>
+    <a  .results-list__shifter  .--next>
+
+ */
+/*-------------------------------------*\
+    COLORS
+\*-------------------------------------*/
+/**
+ * Colors
+ *
+ * All the global colors used throughout
+ *
+ **
+ * Base
+ *
+ *
+
+    [lightest]  [brightest]
+    [lighter]   [brighter]
+    [light]     [bright]
+        --- base ---
+    [dark]      [dull]
+    [darker]    [duller]
+    [darkest]   [dullest]
+ *
+ * Name Pattern:
+ *  c-[name]--[modifier]
+ *
+ */
+/*-------------------------------------*\
+    Base Colors
+\*-------------------------------------*/
+/** don't use */
+/*-------------------------------------*\
+    Site Colors
+\*-------------------------------------*/
+/***
+    Cards
+ ***/
+/**
+ * Cards
+ *
+ * Styline to give an element a self-contained, card-like look
+ *
+
+ */
+/**
+ * The list of items, the actual part that displays the results
+ *
+ * 1. Remove default list stylings, margins, and paddings
+ */
+.results-list {
+  list-style: none;
+  /* 1 */
+  padding: 0;
+  /* 1 */
+  margin: 0 -8px;
+  /* 1 */
+  display: flex;
+  position: relative;
+  /**
+     * For IE 6/7 only
+     * Include this rule to trigger hasLayout and contain floats.
+     */
+  /**
+     * For modern browsers
+     * 1. The space content is one way to avoid an Opera bug when the
+     *    contenteditable attribute is included anywhere else in the document.
+     *    Otherwise it causes space to appear at the top and bottom of elements
+     *    that are clearfixed.
+     * 2. The use of `table` rather than `block` is only necessary if using
+     *    `:before` to contain the top-margins of child elements.
+     */
+  /**
+     * We might want it to be full-width, but we still want a smidge of margin
+     * so that we're not up against the side of the window
+     */
+  /**
+     * Display results in a single horizontal row.
+     * 1. Provide default stylings to handle shifting left/right.
+     */
+  /**
+     * Display results as a single-column, limited-width, vertical grid
+     */
+  /**
+     * Display results in a multi-line grid
+     */
+  /**
+     * Display results as a single-column, full-width, list
+     */ }
+  .results-list {
+    *zoom: 1; }
+  .results-list:before, .results-list:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */ }
+  .results-list:after {
+    clear: both; }
+  .results-list > li {
+    margin: 8px;
+    position: relative; }
+  .--full-width > .results-list {
+    margin-left: 0;
+    margin-right: 0; }
+  .--horizontal > .results-list {
+    width: 100%;
+    margin: 0;
+    /* 1 */
+    position: relative;
+    /* 1 */
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    flex-direction: row;
+    transition: right 300ms ease;
+    /* 1 */ }
+    .--horizontal > .results-list::-webkit-scrollbar {
+      display: none; }
+    .--horizontal > .results-list > li {
+      margin: 0;
+      padding: 8px; }
+  .--vertical > .results-list {
+    background: #eaeaff;
+    flex-direction: column;
+    float: left; }
+  .--grid > .results-list {
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: start; }
+    .--grid > .results-list > li {
+      width: 260px;
+      max-width: 325px;
+      display: flex;
+      flex-grow: 1; }
+  .--list > .results-list {
+    width: 100%;
+    margin: 0;
+    /* 1 */
+    position: relative;
+    /* 1 */
+    flex-wrap: wrap;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none; }
+    .--list > .results-list::-webkit-scrollbar {
+      display: none; }
+    .--list > .results-list > li {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      /* padding: 0 $s-gap; */
+      padding: 0; }
+
+/**
+     * A container that the result list is contained in,
+     * used to add a consistent margin, and some stylistic touches.
+     */
+.results-list__container {
+  position: relative;
+  /**
+     * For IE 6/7 only
+     * Include this rule to trigger hasLayout and contain floats.
+     */
+  /**
+     * For modern browsers
+     * 1. The space content is one way to avoid an Opera bug when the
+     *    contenteditable attribute is included anywhere else in the document.
+     *    Otherwise it causes space to appear at the top and bottom of elements
+     *    that are clearfixed.
+     * 2. The use of `table` rather than `block` is only necessary if using
+     *    `:before` to contain the top-margins of child elements.
+     */
+  /**
+         * Add left/right borders to help make the cut-off in the horizontal
+         * view less jarring
+         */ }
+  .results-list__container {
+    *zoom: 1; }
+  .results-list__container:before, .results-list__container:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */ }
+  .results-list__container:after {
+    clear: both; }
+  .results-list__container.--horizontal {
+    background-color: #f1f1f1;
+    overflow: hidden; }
+    .results-list__container.--horizontal:after, .results-list__container.--horizontal:before {
+      content: "";
+      display: block;
+      background: #eee;
+      width: 1px;
+      position: absolute;
+      top: 4px;
+      bottom: 4px;
+      z-index: 2;
+      box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2); }
+    .results-list__container.--horizontal:after {
+      right: -1px; }
+    .results-list__container.--horizontal:before {
+      left: -1px; }
+  .results-list__container.--list {
+    /* background-color: #f1f1f1; */
+    overflow: hidden; }
+
+/**
+ * The shifter is used to move the results in and out of view, for
+ * when the view area of the results is limited.
+ *
+ * 1. Hide by default
+ */
+.results-list__shifter {
+  display: none;
+  /* 1 */
+  opacity: 0;
+  transition: opacity 180ms ease;
+  /* --horizontal */ }
+  .--horizontal:hover > .results-list__shifter {
+    opacity: .6; }
+  .--horizontal > .results-list__shifter {
+    display: block;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100px;
+    width: 30px;
+    /**
+         * Position down 50%, then bring back up (negative margin) 50%
+         * of the height of the element,
+         *
+         * This centers the next/previous buttons vertically
+         */
+    margin-top: -50px;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    /**
+         * Styling to create the ground-work for the arrow glyphs
+         */
+    /**
+         * 1. Position the previous arrow to the left,
+         * 2. Style the borders to create a left-pointing arrow
+         */
+    /**
+         * 1. Position the previous arrow to the right,
+         * 2. Style the borders to create a right-pointing arrow
+         */ }
+    .--horizontal > .results-list__shifter:hover, .--horizontal > .results-list__shifter:active, .--horizontal > .results-list__shifter:focus {
+      opacity: 1;
+      background: rgba(0, 0, 0, 0.85); }
+    .--horizontal > .results-list__shifter:after {
+      content: " ";
+      display: block;
+      width: 0;
+      height: 0;
+      border: 10px solid transparent;
+      margin-top: -10px;
+      position: absolute;
+      top: 50%; }
+    .--horizontal > .results-list__shifter.--previous {
+      left: 0;
+      /* 1 */ }
+      .--horizontal > .results-list__shifter.--previous:after {
+        /* 2 */
+        border-right-color: #fff;
+        border-right-width: 19px;
+        border-left-width: 0;
+        right: 7px; }
+    .--horizontal > .results-list__shifter.--next {
+      right: 0;
+      /* 1 */ }
+      .--horizontal > .results-list__shifter.--next:after {
+        /* 2 */
+        border-left-color: #fff;
+        border-left-width: 19px;
+        border-right-width: 0;
+        left: 7px; }
+
+.serp-search-box {
+  padding-right: 0;
+  border-collapse: separate;
+  justify-content: space-between; }
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap; }
+
+.serpSearchForm {
+  width: 600px;
+  display: flex;
+  padding-right: 60px; }
+
+.serp-search-box__input {
+  position: relative;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  margin-bottom: 0;
+  padding-top: 6px;
+  display: flex;
+  padding-bottom: 6px; }
+
+.tagline {
+  line-height: 52px;
+  font-size: 13px;
+  padding-right: 16px;
+  text-decoration: underline; }
+
+.tagline__link {
+  color: black;
+  padding-right: 45px; }
+
+.serp-search-box__search-bar {
+  width: 80%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  height: 38px;
+  padding: 9px 14px;
+  font-size: 14px;
+  line-height: 1.3;
+  border-radius: 1px;
+  position: relative;
+  z-index: 2;
+  background-image: none;
+  border: 1px solid #d9d9d9;
+  border-top-color: silver;
+  box-shadow: none;
+  transition: none;
+  color: #555;
+  margin-right: -3px;
+  flex-grow: 1; }
+
+.serp-search-box__search-bar:hover {
+  border: 1px solid #b9b9b9;
+  border-top-color: #a0a0a0;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); }
+
+.serp-search-box__search-bar:focus {
+  border-color: #4d90fe;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(77, 144, 254, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(77, 144, 254, 0.6);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3); }
+
+.serp-search-box__input-container {
+  border-radius: 0;
+  position: relative;
+  font-size: 0;
+  white-space: nowrap;
+  vertical-align: middle; }
+
+.button {
+  padding: 5px 15px 5px 15px;
+  margin: 0;
+  height: 38px;
+  font-size: 14px;
+  line-height: 1.3;
+  border-radius: 1px;
+  z-index: 2;
+  position: relative;
+  cursor: default;
+  background-clip: border-box;
+  box-shadow: none;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  user-select: none; }
+
+.button--search {
+  color: #fff;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+  background-image: -webkit-linear-gradient(top, #4d90fe 0, #4787ed 100%);
+  background-image: -o-linear-gradient(top, #4d90fe 0, #4787ed 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#4d90fe), to(#4787ed));
+  background-image: linear-gradient(to bottom, #4d90fe 0, #4787ed 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff4d90fe',endColorstr='#ff4787ed',GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  background-repeat: repeat-x;
+  border: 1px solid #3079ed;
+  background-color: #337ab7;
+  vertical-align: top; }
+
+.button--search:focus {
+  border: 1px solid #3079ed;
+  -webkit-box-shadow: inset 0 0 0 1px #fff;
+  box-shadow: inset 0 0 0 1px #fff; }
+
+/***
+    SEARCH RESULT
+ ***/
+/**
+ * Search Result
+ *
+ * Stylings to represent a singular search result that would display on our
+ * SERP
+ *
+
+ */
+/**
+ * Use on the containing text element, to create a single line
+ * text-overflowing ellipsis
+ */
+.search-result {
+  color: #333;
+  font-size: 1.3rem;
+  line-height: 1.415;
+  margin-bottom: 1.5em;
+  /**
+     * The actual link element that will be clicked on
+     *
+     * 1. We have small links, add a bit of padding for mobile accessibility
+     * 2. Excplicitly set these, so that weirdness from other elements doesn't
+     *    cause things to break.
+     */ }
+  .search-result a {
+    color: inherit;
+    padding: 2px 2px 2px 0;
+    /* 1 */
+    margin: 0;
+    /* 2 */
+    display: inline;
+    /* 2 */ }
+    .search-result a:hover, .search-result a:active, .search-result a:focus {
+      text-decoration: none; }
+  .search-result p {
+    margin-bottom: 0; }
+
+.search-result__link,
+a.search-result__link {
+  color: #1a0dab; }
+  .search-result__link:hover, .search-result__link:active, .search-result__link:focus,
+  a.search-result__link:hover,
+  a.search-result__link:active,
+  a.search-result__link:focus {
+    text-decoration: underline; }
+
+.search-result__title {
+  font-size: 1.425em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.search-result__source-citation {
+  color: #006621;
+  font-style: normal;
+  font-size: 1.085em; }
+
+.search-result__source-citation__annotation.search-result__source-citation__annotation {
+  color: #757575; }
+
+.search-result__source-citation__annotation:before {
+  content: "\00b7 "; }
+
+.search-result__sublinks {
+  list-style: none;
+  padding-left: 1em;
+  max-width: 70%;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2; }
+
+.search-result__annotations-list {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.search-result__annotations-list__link.search-result__annotations-list__link {
+  font-size: 0.875em;
+  padding: 3px 3px 3px 0;
+  padding-left: 0; }
